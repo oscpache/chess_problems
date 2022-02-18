@@ -12,3 +12,5 @@ Python 3.x, pygame and numpy.
 
 ## Running the program 
 Right after execution, a GUI window will be launched. You will be able to run the animation by pressing the [enter] key and finishing the program by pressing keys [q] or [esc].    
+
+![plot](./sample.png)
