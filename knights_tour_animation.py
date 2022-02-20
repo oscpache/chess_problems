@@ -1,6 +1,6 @@
 import pygame, sys
 from base import core
-from warnsdorff_heuristic import WarnsdorffHeuristic
+from base.warnsdorff_heuristic import WarnsdorffHeuristic
 from queens_animation import Queen
 import random
 
