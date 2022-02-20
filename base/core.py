@@ -6,6 +6,7 @@ WHITE = 255, 255, 255
 BLACK = 0, 0, 0
 GRAY = 47, 79, 79
 YELLOW = 249, 186, 55
+GREEN = 0, 128, 0
 
 WIDTH, HEIGHT = 560, 560
 pygame.init()

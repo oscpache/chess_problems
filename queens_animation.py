@@ -4,10 +4,10 @@ from base import core
 
 
 class Queen(core.BoxObject):
-    def __init__(self, x: int, y: int, objlen: int, boxlen: int) -> None:
+    def __init__(self, x: int, y: int, objlen: int, boxlen: int, image_name: str = "wQueen.png") -> None:
         super().__init__(x, y, boxlen)
         self.objlen = objlen  # size of piece 
-        self.surf = pygame.transform.scale(pygame.image.load("images/wQueen.png"), (self.objlen, self.objlen))
+        self.surf = pygame.transform.scale(pygame.image.load(f"images/{image_name}"), (self.objlen, self.objlen))
         core.screen.blit(self.surf, self.obj_left_corner)
         pygame.display.flip()
 
@@ -87,7 +87,7 @@ def main() -> None:
                 frame_id = (frame_id + 1) % len(configs)
                 set_text(message=message)
                 pygame.time.delay(100)
-                # pygame.event.clear()
+                pygame.event.clear()
 
 
 if __name__ == "__main__":
